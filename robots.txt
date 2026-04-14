@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+Disallow: /private/
+
+# Allow all major AI crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+Sitemap: https://www.jerusalemcatering.com/sitemap.xml
