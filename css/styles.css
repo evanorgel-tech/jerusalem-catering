@@ -467,21 +467,14 @@ h1, h2, h3 {
   grid-template-columns: 2fr 1fr;
 }
 
+.photo-row {
+  height: 300px;
+}
+
 .photo-wrap {
   overflow: hidden;
   border-radius: 6px;
-  aspect-ratio: 1 / 1;
-}
-
-/* override aspect ratio for wide photos */
-.row-2 .photo-wrap:last-child,
-.row-2-rev .photo-wrap:first-child {
-  aspect-ratio: 2.15 / 1;
-}
-
-.row-2 .photo-wrap:first-child,
-.row-2-rev .photo-wrap:last-child {
-  aspect-ratio: 1 / 1;
+  height: 100%;
 }
 
 .photo-wrap img {
@@ -882,14 +875,11 @@ h1, h2, h3 {
   /* Photo grid: collapse to 2-column */
   .photo-row {
     grid-template-columns: 1fr 1fr !important;
+    height: 200px;
   }
 
   .row-3 .photo-wrap:last-child {
     grid-column: span 2;
-  }
-
-  .photo-wrap {
-    aspect-ratio: 1 / 1 !important;
   }
 
   /* Kosher */
@@ -922,6 +912,7 @@ h1, h2, h3 {
 @media (max-width: 480px) {
   .photo-row {
     grid-template-columns: 1fr !important;
+    height: 220px;
   }
 
   .row-3 .photo-wrap:last-child {
