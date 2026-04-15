@@ -286,15 +286,19 @@
           </a>
         </div>
 
-        <form class="contact-form" id="contact-form" novalidate>
+        <div data-fs-error class="fs-global-error"></div>
+
+        <form class="contact-form" id="contact-form">
           <div class="form-row">
             <div class="form-group">
               <label for="name">Name <span aria-hidden="true">*</span></label>
-              <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name" />
+              <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name" data-fs-field />
+              <span data-fs-error="name" class="fs-field-error"></span>
             </div>
             <div class="form-group">
               <label for="email">Email <span aria-hidden="true">*</span></label>
-              <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+              <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" data-fs-field />
+              <span data-fs-error="email" class="fs-field-error"></span>
             </div>
             <div class="form-group">
               <label for="phone">Phone</label>
@@ -339,10 +343,10 @@
             <textarea id="message" name="message" rows="4" placeholder="Tell us about your event..."></textarea>
           </div>
 
-          <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+          <button type="submit" class="btn btn-primary btn-submit" data-fs-submit-btn>Send Message</button>
         </form>
 
-        <div class="contact-thankyou" id="contact-thankyou" hidden aria-live="polite">
+        <div data-fs-success class="contact-thankyou">
           <div class="thankyou-card">
             <div class="thankyou-icon" aria-hidden="true">✓</div>
             <h3>Thank You!</h3>
@@ -382,5 +386,12 @@
   </footer>
 
   <script src="js/main.js"></script>
+
+  <!-- Formspree -->
+  <script>
+    window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+    formspree('initForm', { formElement: '#contact-form', formId: 'mkokgeap' });
+  </script>
+  <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
 </html>

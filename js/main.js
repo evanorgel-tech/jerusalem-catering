@@ -96,39 +96,5 @@
   });
 
 
-  /* ---------- Contact form ---------- */
-  const form      = document.getElementById('contact-form');
-  const thankyou  = document.getElementById('contact-thankyou');
-
-  if (form && thankyou) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-
-      // Basic validation
-      const name  = form.querySelector('#name');
-      const email = form.querySelector('#email');
-      let valid = true;
-
-      [name, email].forEach(function (field) {
-        field.style.borderColor = '';
-        if (!field.value.trim()) {
-          field.style.borderColor = '#c0392b';
-          valid = false;
-        }
-      });
-
-      if (email.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
-        email.style.borderColor = '#c0392b';
-        valid = false;
-      }
-
-      if (!valid) return;
-
-      // Show thank-you, hide form
-      form.style.display = 'none';
-      thankyou.hidden = false;
-      thankyou.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    });
-  }
 
 })();

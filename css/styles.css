@@ -676,6 +676,19 @@ h1, h2, h3 {
   min-height: 110px;
 }
 
+/* Formspree error messages */
+.fs-global-error:not(:empty) {
+  color: #c0392b;
+  font-size: 0.88rem;
+  margin-bottom: 1rem;
+}
+
+.fs-field-error:not(:empty) {
+  color: #c0392b;
+  font-size: 0.78rem;
+  margin-top: 0.25rem;
+}
+
 /* Thank-you card */
 .contact-thankyou {
   margin-top: 2rem;
