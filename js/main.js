@@ -98,4 +98,20 @@
 
 
 
+  /* ---------- GA lead event on form success ---------- */
+  const thankYouEl = document.querySelector('[data-fs-success]');
+  if (thankYouEl) {
+    new MutationObserver(function (mutations, obs) {
+      if (window.getComputedStyle(thankYouEl).display !== 'none') {
+        if (typeof gtag === 'function') {
+          gtag('event', 'generate_lead', {
+            'event_category': 'form',
+            'event_label': 'contact_form'
+          });
+        }
+        obs.disconnect();
+      }
+    }).observe(thankYouEl, { attributes: true, attributeFilter: ['style', 'class'] });
+  }
+
 })();
