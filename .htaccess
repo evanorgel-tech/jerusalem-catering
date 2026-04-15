@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^(www\.)?jerusalemlivingston\.com$ [NC]
+RewriteRule ^ https://jerusalemcateringservice.com%{REQUEST_URI} [R=301,L]
