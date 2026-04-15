@@ -32,7 +32,5 @@ Search `index.html` for the old value and replace — it appears in the hero, me
 Replace any of `images/food-1.jpg` through `images/food-7.jpg` with new photos.
 Keep the same filenames. Recommended minimum size: 800px wide.
 
-### Domain Goes Live
-1. Update the canonical URL in `index.html` (search for `jerusalemcatering.com`)
-2. Update `sitemap.xml` URLs
-3. Update Open Graph `og:url` and `og:image` meta tags
+### Domain
+Live at `https://jerusalemcateringservice.com` — all URLs updated throughout `index.html`, `sitemap.xml`, and `robots.txt`.
