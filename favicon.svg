@@ -1,5 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="6" fill="#0B1F41"/>
-  <text x="4" y="23" font-family="Georgia, serif" font-size="18" font-weight="400" fill="#FAF7F2">J</text>
-  <text x="17" y="23" font-family="Georgia, serif" font-size="18" font-weight="400" fill="#C83803">C</text>
+  <!-- Plate ring -->
+  <circle cx="16" cy="16" r="15.5" fill="#0B1F41" stroke="#C83803" stroke-width="1.5"/>
+  <!-- JC monogram centered -->
+  <text x="16" y="23" text-anchor="middle" font-family="Georgia, serif" font-size="18" font-weight="400">
+    <tspan fill="#FAF7F2">J</tspan><tspan fill="#C83803">C</tspan>
+  </text>
 </svg>
