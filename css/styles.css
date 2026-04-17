@@ -1,6 +1,6 @@
 /* ============================================================
    Jerusalem Catering — styles.css
-   Colors: Navy #0B1F41 · Orange #C83803 · Cream #FAF7F2
+   Colors: Navy #0B162A · Orange #E64100 · Cream #FAF7F2
    Fonts: Playfair Display (headings) · Inter (body/UI)
    ============================================================ */
 
@@ -41,8 +41,8 @@ ul {
 
 /* ---------- CSS Variables ---------- */
 :root {
-  --navy:   #0B1F41;
-  --orange: #C83803;
+  --navy:   #0B162A;
+  --orange: #E64100;
   --cream:  #FAF7F2;
   --dark:   #1A1A1A;
   --border: #E8E0D5;
