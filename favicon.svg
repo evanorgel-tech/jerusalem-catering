@@ -1,6 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
   <rect width="32" height="32" rx="6" fill="#0B162A"/>
   <circle cx="16" cy="16" r="12" fill="#E64100"/>
-  <text x="16" y="22" font-family="Georgia, serif" font-size="15" font-weight="400"
-    fill="#FAF7F2" text-anchor="middle" letter-spacing="-1">JC</text>
+  <text x="16" y="22" font-family="Georgia, serif" font-size="15" font-weight="700"
+    text-anchor="middle" letter-spacing="-1"
+    stroke="#0B162A" stroke-width="4" paint-order="stroke" fill="#0B162A">JC</text>
+  <text x="16" y="22" font-family="Georgia, serif" font-size="15" font-weight="700"
+    text-anchor="middle" letter-spacing="-1"
+    stroke="#FAF7F2" stroke-width="2.5" paint-order="stroke" fill="#FAF7F2">JC</text>
 </svg>
